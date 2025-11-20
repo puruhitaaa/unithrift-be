@@ -8,6 +8,13 @@
       "when": 1745557486464,
       "tag": "0000_happy_adam_warlock",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1763646909269,
+      "tag": "0001_funny_shatterstar",
+      "breakpoints": true
     }
   ]
 }
