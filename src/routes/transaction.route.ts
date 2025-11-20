@@ -5,8 +5,10 @@ import { createDb } from "@/db"
 import { transaction, listing, user } from "@/db/schema"
 import { eq, and, desc } from "drizzle-orm"
 import { createSnapToken, handleMidtransNotification } from "@/lib/midtrans"
+import apiCors from "@/middlewares/api-cors"
 
 const router = createRouter()
+router.use(apiCors)
 
 // Validation schemas
 const createTransactionSchema = z.object({

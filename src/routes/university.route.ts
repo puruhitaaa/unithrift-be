@@ -5,8 +5,10 @@ import { createDb } from "@/db"
 import { university } from "@/db/schema"
 import { eq } from "drizzle-orm"
 import { uploadToCloudinary } from "@/lib/cloudinary"
+import apiCors from "@/middlewares/api-cors"
 
 const router = createRouter()
+router.use(apiCors)
 
 // Validation schemas
 const createUniversitySchema = z.object({

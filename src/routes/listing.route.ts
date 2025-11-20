@@ -5,8 +5,10 @@ import { createDb } from "@/db"
 import { listing, listingMedia, user, university } from "@/db/schema"
 import { eq, and, desc, sql } from "drizzle-orm"
 import { uploadToCloudinary } from "@/lib/cloudinary"
+import apiCors from "@/middlewares/api-cors"
 
 const router = createRouter()
+router.use(apiCors)
 
 // Validation schemas
 const createListingSchema = z.object({
