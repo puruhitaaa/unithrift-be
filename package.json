@@ -19,10 +19,12 @@
     "dotenv": "^16.5.0",
     "drizzle-orm": "^0.43.0",
     "hono": "^4.7.7",
+    "midtrans-client": "^1.4.3",
     "pg": "^8.15.5",
     "zod": "^4.1.12"
   },
   "devDependencies": {
+    "@types/midtrans-client": "^1.4.0",
     "@types/pg": "^8.11.14",
     "drizzle-kit": "^0.31.0",
     "tsx": "^4.19.3",

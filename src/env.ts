@@ -10,6 +10,9 @@ const EnvSchema = z.object({
   CLOUDINARY_CLOUD_NAME: z.string(),
   CLOUDINARY_API_KEY: z.string(),
   CLOUDINARY_API_SECRET: z.string(),
+  MIDTRANS_SERVER_KEY: z.string(),
+  MIDTRANS_CLIENT_KEY: z.string(),
+  MIDTRANS_IS_PRODUCTION: z.string().default("false"),
 })
 
 export type Environment = z.infer<typeof EnvSchema>
